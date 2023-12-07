@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add blog</title>
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <%- include('header') %>
+   <center>
+    <form action="/blog/create" method="post" id="blogForm">
+        <label>title</label>
+          <input type="text" name="title" id="title" >
+          <br><br>
+          <label>content</label>
+          <input type="text" name="content" id="content" >
+          <br><br>
+          <label>category</label>
+          <input type="text" name="category" id="category" >
+          <br><br>
+          <label>img</label>
+          <input type="text" name="image" id="image" >
+          <br><br>
+          <input type="submit" class="btn"> 
+  </form>
+   </center>
+</body>
+</html>
